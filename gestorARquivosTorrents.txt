@@ -1,0 +1,12 @@
+=>Placa de Rede sem fio ->https://web.archive.org/web/20141217074259/http://groenholdt.net/
+
+
+NFS + Transmission-Daemon
+
+
+=>Problema com o NFS (Portmap) - http://raspberrypi.stackexchange.com/questions/10403/nfs-server-not-starting-portmapper-is-not-running
+
+
+http://www.webupd8.org/2009/12/setting-up-transmission-remote-gui-in.html
+
+https://wiki.archlinux.org/index.php/Transmission#Configuring_the_daemon
