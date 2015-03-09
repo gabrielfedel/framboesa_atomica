@@ -1,0 +1,84 @@
+==Raspberry Pi
+-> referência para adaptadores wifi:
+http://elinux.org/RPi_USB_Wi-Fi_Adapters
+
+Problemas com Adaptador Wifi: MT7601
+->Não estou conseguindo usar pois está com versão diferente do kernel, tentar instalar novamente o raspbian ou então no raspbmc
+alguns links de referência
+
+
+http://gowthamgowtham.blogspot.com.br/2013/11/mediatekralink-wifi-adapter-in.html
+
+http://randomn3s5.blogspot.com.br/2014/07/going-wireless-on-raspbmc-with-mt7601.html
+
+https://github.com/porjo/mt7601
+
+https://code.launchpad.net/~thopiekar/+archive/ubuntu/mt7601 (para ubuntu -> funciona)
+
+--->outros adaptadores para comprar que devem funcionar:
+
+http://www.kalunga.com.br/prod/adaptador-wireless-300-mbps-usb-80211n-dwa-131-d-link/610351
+
+http://www.extra.com.br/Informatica/EquipamentosdeRedeWireless/AdaptadordeRede/Adaptador-USB-TP-Link-TL-WN725N-Wireless-Nano---150-Mbps---2366687.html?utm_source=buscape&utm_medium=comparadorpreco&utm_campaign=Informatica_Adaptador-de-Rede&utm_content=2366687&cm_mmc=buscape_XML-_-INFO-_-Comparador-_-2366687
+
+http://www.extra.com.br/Informatica/EquipamentosdeRedeWireless/AdaptadordeRede/Adaptador-Mini-USB-TP-Link-TL-WN723N-Wireless--150-Mbps--2366679.html?utm_source=buscape&utm_medium=comparadorpreco&utm_campaign=Informatica_Adaptador-de-Rede&utm_content=2366679&cm_mmc=buscape_XML-_-INFO-_-Comparador-_-2366679
+
+http://produto.mercadolivre.com.br/MLB-625544421-adaptador-wireless-usb-wifi-edimax-ew-7811un-p-raspberry-pi-_JM
+
+
+==Gerenciador de Torrent no RaspPi
+Usando o transmission (controlando ele pela interface web)
+Criando partição NFS (para acessar os arquivos pela rede)
+Gerenciar velocidade de download/upload, para quando a rede estiver ociosa baixar em velocidade maior ->> como?
+
+
+==Backup automático
+1)File Server / NAS 
+Partição NFS -> Usando um HD Usb conectado ao Raspberry
+http://www.cromwell-intl.com/linux/raspberry-pi/nas.html (resolve todos os pequenos problemas que encontrei)
+
+*Problema: não conseguir montar remotamente
+*Solução: precisa reiniciar o rcpbind antes de iniciar o nfs-server
+
+
+*Problema: no primeiro acesso é necessário aguardar um bom tempo até conseguir visualizar o conteúdo
+
+*Problema: tentando acessar um vídeo em alta resolução o vídeo fica travando (limite de velocidade transmissão ou de processamento do NFS) -> vídeos com resolução menor funcionam numa boa
+
+
+-->NAS:
+(soluções sem raspberry)
+http://www.maximumpc.com/article/howtos/how_to_build_a_nas_box
+http://www.freenas.org 
+http://xmodulo.com/how-to-build-network-attached-storage-nas-server-with-openfiler.html
+
+2)Script nas máquinas para fazer rsync
+
+==TVEsperta -> com RasPi
+==RaspBMC -> Plugin Pulsar (parecido com PopCornTime)
+Instalar pulsar (seguindo explicações do tutorial abaixo)
+
+http://forum.kodi.tv/showthread.php?tid=200957
+
+Instalar pulsar providers e kody underground
+
+Pulsar providers: http://forum.kodi.tv/showthread.php?tid=204728
+kody underground: https://github.com/prilly/repository.kodiunderground
+
+No kody underground baixar os providers
+
+*Problema: Legendas
+
+
+Compartilha de tela
+
+==Overclocking do Raspberry
+
+https://www.jeremymorgan.com/tutorials/raspberry-pi/how-to-overclock-raspberry-pi/
+
+
+==Discos
+Tentar usar discos parados de notebook/computador, pra isso , adaptador sata-usb:
+http://www.amazon.com/HDE-USB-eSATA-SATA-Adapter/dp/B002BC32OG/ref=sr_1_6?s=electronics&ie=UTF8&qid=1421593976&sr=1-6&keywords=sata+to+usb+linux
+http://produto.mercadolivre.com.br/MLB-606501367-cabo-adaptador-usb-20-hd-conversor-p-ide-sata-fonte-3-em-1-_JM
+http://produto.mercadolivre.com.br/MLB-607774998-cabo-adaptador-conversor-usb-20-sata-ide-25-35-hd-cd-rom-_JM
